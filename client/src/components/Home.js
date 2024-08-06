@@ -21,8 +21,8 @@ const Home = () => {
     return (
         <>
             <section className='iteam_section mt-4 container'>
-                <h2 className='px-4' style={{ fontWeight: 400 }}>Restaurants in Ahmedabad Open now</h2>
-                <div className='row mt-2 d-flex justify-content-around align-items-center'>
+                <h2 className='px-4 mx-2 fw-bold' style={{ fontWeight: 400 }}>Restaurants in your City</h2>
+                <div className='row mt-3 d-flex justify-content-around align-items-center'>
                     {
                         cartData.map((element, index) => {
                             return (
@@ -38,7 +38,7 @@ const Home = () => {
 
                                             <div className="lower_data d-flex justify-content-between ">
                                                 <h5>{element.address}</h5>
-                                                <span>₹ {element.price}</span>
+                                                <span className='text-danger fw-medium'>₹ {element.price}</span>
                                             </div>
                                             <div className="extra"></div>
 

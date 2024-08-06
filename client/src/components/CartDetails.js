@@ -148,8 +148,8 @@ const CartDetails = () => {
                                                                     ><i className='fa fa-trash-alt'></i></button>
                                                                 </td>
                                                                 <td><div className='product-img'><img src={data.imgdata} alt="" /></div></td>
-                                                                <td><div className='product-name'><p>{data.dish}</p></div></td>
-                                                                <td>{data.price}</td>
+                                                                <td><div className='product-name fw-medium'><p>{data.dish}</p></div></td>
+                                                                <td>₹ {data.price}</td>
                                                                 <td>
                                                                     <div className="prdct-qty-container">
                                                                         <button className='prdct-qty-btn' type='button' 
@@ -163,7 +163,7 @@ const CartDetails = () => {
                                                                         </button>
                                                                     </div>
                                                                 </td>
-                                                                <td className='text-right'>₹ {data.qnty * data.price}</td>
+                                                                <td className='text-right fw-medium'>₹ {data.qnty * data.price}</td>
                                                             </tr>
                                                         </>
                                                     )
@@ -190,5 +190,3 @@ const CartDetails = () => {
 }
 
 export default CartDetails
-
-
